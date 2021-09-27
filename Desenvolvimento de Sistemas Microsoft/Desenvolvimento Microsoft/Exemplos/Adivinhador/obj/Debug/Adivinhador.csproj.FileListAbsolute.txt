@@ -1,0 +1,13 @@
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.exe.config
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.exe
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.pdb
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.csprojAssemblyReference.cache
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.csproj.CoreCompileInputs.cache
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.exe
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.pdb
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.exe.config
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.exe
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\bin\Debug\Adivinhador.pdb
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.csproj.CoreCompileInputs.cache
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.exe
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\Adivinhador\obj\Debug\Adivinhador.pdb

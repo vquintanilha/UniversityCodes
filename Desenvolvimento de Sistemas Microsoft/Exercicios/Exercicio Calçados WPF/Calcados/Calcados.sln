@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calcados", "Calcados\Calcados.csproj", "{81B78912-644A-4C7B-844E-448201DDD461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcadosWPF", "CalcadosWPF\CalcadosWPF.csproj", "{9924699A-FEB1-4593-A375-EB36D5D74449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81B78912-644A-4C7B-844E-448201DDD461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B78912-644A-4C7B-844E-448201DDD461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B78912-644A-4C7B-844E-448201DDD461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B78912-644A-4C7B-844E-448201DDD461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9924699A-FEB1-4593-A375-EB36D5D74449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9924699A-FEB1-4593-A375-EB36D5D74449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9924699A-FEB1-4593-A375-EB36D5D74449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9924699A-FEB1-4593-A375-EB36D5D74449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C471E83-D827-4277-9702-F652C36E34BD}
+	EndGlobalSection
+EndGlobal

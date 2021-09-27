@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+	<ui:composition template="/recursos/template/template.xhtml">
+	
+		<ui:define name="tituloSistema">
+			<a href="#"><span>victor</span>Quintanilha</a>
+		</ui:define>
+		
+		<ui:define name="tituloPagina">Lista de Comentários</ui:define>
+		<ui:define name="tituloPrincipal">Lista de Comentários</ui:define>
+		<ui:define name="tituloSecundario">listagem com os comentários</ui:define>
+		
+		<ui:define name="conteudo">
+		
+			<p:growl globalOnly="true" />
+
+			<p:dataTable value="#{comentarioBean.listarComentarios()}" var="comentario">
+				
+				<p:column headerText="Ações">
+					<p:commandButton value="Excluir" action="#{comentarioBean.excluirComentario(comentario)}" update="@form">
+						<p:confirm header="Confirmação" message="Deseja realmente excluir o comentário?" icon="pi pi-exclamation-triangle" />
+					</p:commandButton>
+					<p:commandButton value="Curtir" action="#{comentarioBean.curtirComentario(comentario)}" update="@form" />
+				</p:column>
+				
+				<p:column headerText="Nome">
+					<h:outputText value="#{comentario.nome}" />
+				</p:column>
+				
+				<p:column headerText="Comentário">
+					<h:outputText value="#{comentario.comentario}" />
+				</p:column>
+				
+				<p:column headerText="Tipo">
+					<h:outputText value="#{comentario.tipo}" />
+				</p:column>
+				
+				<p:column headerText="Data/Hora">
+					<h:outputText value="#{comentario.data}" />
+				</p:column>
+				
+				<p:column headerText="Curtidas">
+					<h:outputText value="#{comentario.curtidas}" />
+				</p:column>
+
+			</p:dataTable>
+	
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="pi pi-check" />
+				<p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="pi pi-times" />
+			</p:confirmDialog>
+			
+		</ui:define>
+	
+	</ui:composition>
+	
+</html>

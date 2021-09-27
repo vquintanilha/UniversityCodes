@@ -1,0 +1,7 @@
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\obj\Debug\Automovel.csprojAssemblyReference.cache
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\obj\Debug\Automovel.csproj.CoreCompileInputs.cache
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\bin\Debug\Automovel.exe.config
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\bin\Debug\Automovel.exe
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\bin\Debug\Automovel.pdb
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\obj\Debug\Automovel.exe
+C:\Users\1829203\source\repos\ExemploPolimorfismo\Automovel\obj\Debug\Automovel.pdb

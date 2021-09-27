@@ -1,0 +1,48 @@
+div.quadro{
+	background: #333333;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 305px;
+	height: 305px;
+}
+
+div.celula{
+	color: yellow;
+	font-family: verdana;
+	text-align: center;
+	font-size: 60pt;
+	line-height: 95px;
+	background: #999999;
+	position: absolute;
+	width: 95px;
+	height: 95px;
+}
+
+div.c11{
+	top: 5px; left: 5px;
+}
+div.c12{
+	top: 5px; left: 105px;
+}
+div.c13{
+	top: 5px; left: 205px;
+}
+div.c21{
+	top: 105px; left: 5px;
+}
+div.c22{
+	top: 105px; left: 105px;	
+}
+div.c23{
+	top: 105px; left: 205px;	
+}
+div.c31{
+	top: 205px; left: 5px;
+}
+div.c32{
+	top: 205px; left: 105px;	
+}
+div.c33{
+	top: 205px; left: 205px;	
+}

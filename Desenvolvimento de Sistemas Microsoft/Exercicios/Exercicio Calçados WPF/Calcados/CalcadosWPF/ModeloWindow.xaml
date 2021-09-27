@@ -1,0 +1,83 @@
+﻿<Window x:Class="CalcadosWPF.ModeloWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcadosWPF"
+        mc:Ignorable="d"
+        Title="Cadastro de Modelos" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" Height="70">
+            <Button Margin="10,10,10,5" Width="100" x:Name="BtnAdicionar" Click="BtnAdicionar_Click">Adicionar</Button>
+            <Button Margin="10,5,10,10" Width="100" x:Name="BtnRemover" Click="BtnRemover_Click" IsEnabled="{Binding PodeRemover}">Remover</Button>
+        </StackPanel>
+
+        <DataGrid Grid.Column="1" Grid.ColumnSpan="5" Margin="10" AutoGenerateColumns="False" x:Name="ModelosDataGrid"
+                  ItemsSource="{Binding ModeloSapatos}" SelectedItem="{Binding ModeloSapatoSelecionado}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
+                <DataGridCheckBoxColumn Header="Cadarço" Binding="{Binding Cadarco}"/>
+                <DataGridTextColumn Header="Material" Binding="{Binding Material}"/>
+                <DataGridTextColumn Header="Preço" Binding="{Binding Preco}"/>
+                <DataGridTextColumn Header="Fotografia" Binding="{Binding Fotografia}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <TextBlock Grid.Row="1" Margin="10" VerticalAlignment="Center">Nome: *</TextBlock>
+        <TextBox Grid.Row="1" x:Name="NomeTextBox" Grid.Column="1" Grid.ColumnSpan="4" Margin="10" 
+                 Text="{Binding ModeloSapatoSelecionado.Nome}"/>
+
+        <TextBlock Grid.Row="2" Margin="10" VerticalAlignment="Center">Caracteristicas:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="10" VerticalAlignment="Center">Cadarço: *</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="2" Margin="10" VerticalAlignment="Center" SelectedIndex="0"
+                  SelectedValue="{Binding ModeloSapatoSelecionado.Cadarco}" SelectedValuePath="Tag" x:Name="TxtCadarco">
+            <ComboBoxItem Tag="True" Content="Sim"/>
+            <ComboBoxItem Tag="False" Content="Não"/>
+        </ComboBox>
+        <TextBlock Grid.Row="2" Grid.Column="3" Margin="10" VerticalAlignment="Center">Material: *</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="4" Margin="10" VerticalAlignment="Center" Width="150" SelectedIndex="0"
+                  SelectedValue="{Binding ModeloSapatoSelecionado.Material}" SelectedValuePath="Tag">
+            <ComboBoxItem Tag="Couro" Content="Couro"/>
+            <ComboBoxItem Tag="Sintético" Content="Sintético"/>
+            <ComboBoxItem Tag="Tecido" Content="Tecido"/>
+            <ComboBoxItem Tag="Borracha" Content="Borracha"/>
+        </ComboBox>
+
+        <TextBlock Grid.Row="3" Margin="10" VerticalAlignment="Center">Preço: *</TextBlock>
+        <TextBox x:Name="PrecoTextBox" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" Margin="10" 
+                 Text="{Binding ModeloSapatoSelecionado.Preco}"/>
+
+        <TextBlock Grid.Row="4" Margin="10" VerticalAlignment="Center">Foto:</TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" x:Name="FotoTextBox" Margin="10" 
+                 Text="{Binding ModeloSapatoSelecionado.Fotografia}" TextChanged="FotoTextBox_TextChanged"/>
+        <Button Grid.Row="4" Grid.Column="4" Margin="10" x:Name="BtnProcurar" Click="BtnProcurar_Click" Width="100" Content="Procurar"/>
+
+        <Image Grid.Row="1" x:Name="ImagemModelo"
+               Grid.Column="6" Height="130" 
+               VerticalAlignment="Top" Width="130" 
+               Margin="10" Grid.RowSpan="4"/>
+
+        <StackPanel Grid.Row="7" Grid.ColumnSpan="6" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Margin="10" Width="100" x:Name="BtnSalvar" Click="BtnSalvar_Click">Salvar</Button>
+            <Button Margin="10" Width="100" x:Name="BtnCancelar" Click="BtnCancelar_Click">Cancelar</Button>
+        </StackPanel>
+    </Grid>
+</Window>

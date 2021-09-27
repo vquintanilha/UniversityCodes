@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+
+	<h:form>
+
+		<p:growl globalOnly="true" />
+
+		<p:dataTable value="#{comentarioBean.listar()}" var="comentario">
+
+			<p:column headerText="Ações">
+				<p:commandButton value="Curtir"
+					action="#{comentarioBean.curtir(comentario)}" update="@form" />
+				<p:commandButton value="Excluir"
+					action="#{comentarioBean.excluir(comentario)}" update="@form" />
+			</p:column>
+
+			<p:column headerText="Usuário">
+				<h:outputText value="#{comentario.usuario}" />
+			</p:column>
+
+			<p:column headerText="Postagem">
+				<h:outputText value="#{comentario.postagem}" />
+			</p:column>
+
+			<p:column headerText="Tipo">
+				<h:outputText value="#{comentario.tipo}" />
+			</p:column>
+
+			<p:column headerText="Data e hora">
+				<h:outputText value="#{comentario.dataHora}" />
+			</p:column>
+
+			<p:column headerText="Curtidas">
+				<h:outputText value="#{comentario.curtidas}" />
+			</p:column>
+
+		</p:dataTable>
+
+	</h:form>
+
+
+</h:body>
+</html>

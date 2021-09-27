@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<title>Calcula o Enésimo termo da PA</title>
+	</h:head>
+
+<h:body>
+	
+	<h1>Calcula o Enésimo termo da PA</h1>
+	
+	<h:form>
+	
+		<h:outputLabel for="n1" value="a1:"/>
+		<h:inputText id="n1" value="#{progressaoBean.a1}"/>
+		<h:message for="n1"/>
+		<br/>
+		
+		<h:outputLabel for="n2" value="n:"/>
+		<h:inputText id="n2" value="#{progressaoBean.n}"/>
+		<h:message for="n2"/>
+		<br/>
+		
+		<h:outputLabel for="n3" value="r:"/>
+		<h:inputText id="n3" value="#{progressaoBean.r}"/>
+		<h:message for="n3"/>
+		<br/>
+		
+		<h:outputLabel for="n4" value="an:"/>
+		<h:outputText id="n4" value="#{progressaoBean.an}" />
+		<br/>
+		
+		<h:commandButton action="#{progressaoBean.calcular()}" value="calcular" />
+		
+	</h:form>
+	
+</h:body>
+
+</html>

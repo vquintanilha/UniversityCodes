@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+      
+<h:head>
+	<title>Calcula o Enésimo termo da PA</title>
+</h:head>
+
+<h:body>	
+	
+	<h:form>
+	
+		<p:messages globalOnly="true"/>
+	
+		<p:panel header="Calcula o Enésimo termo da PA">
+		
+			<p:panelGrid columns="3" styleClass="ui-panelgrid-blank">
+			
+				<p:outputLabel for="n1" value="a1:"/>
+				<p:inputNumber id="n1" value="#{progressaoBean.calculoPA.a1}" thousandSeparator="." decimalSeparator="," decimalPlaces="2"/>
+				<p:message for="n1"/>
+				
+				<p:outputLabel for="n2" value="n:"/>
+				<p:inputNumber id="n2" value="#{progressaoBean.calculoPA.n}" thousandSeparator="." decimalPlaces="0"/>
+				<p:message for="n2"/>
+				
+				<p:outputLabel for="n3" value="r:"/>
+				<p:inputNumber id="n3" value="#{progressaoBean.calculoPA.r}" thousandSeparator="." decimalSeparator="," decimalPlaces="2"/>
+				<p:message for="n3"/>
+			
+			</p:panelGrid>
+			
+			<f:facet name="footer">
+			
+				<p:commandButton action="#{progressaoBean.calcular()}" value="Calcular" update="@form"/>
+			
+			</f:facet>
+		
+		</p:panel>
+		
+		<p:dataTable value="#{progressaoBean.calculos}" var="cpa">
+		
+			<p:column headerText="a1">
+				<h:outputText value="#{cpa.a1}"/>
+			</p:column>
+			
+			<p:column headerText="n">
+				<h:outputText value="#{cpa.n}"/>
+			</p:column>
+			
+			<p:column headerText="r">
+				<h:outputText value="#{cpa.r}"/>
+			</p:column>
+			
+			<p:column headerText="an">
+				<h:outputText value="#{cpa.an}"/>
+			</p:column>
+		
+		</p:dataTable>
+	
+	</h:form>
+	
+</h:body>
+
+</html>

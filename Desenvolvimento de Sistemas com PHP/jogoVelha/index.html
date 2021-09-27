@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste de CSS</title>
+	<meta charset="UTF-8">
+	<link rel=stylesheet href="estilo.css" type="text/css">
+	<script type="text/javascript">
+		var u=''
+		var victory = false;
+		var clicked=[]
+		var matches=[]
+		var vencedor = ''
+		function p(l,c){
+			if(victory){
+				alert('O jogo já acabou!')
+				return
+			}
+			var cssClass='c'+l+c
+			var val=0
+			if(clicked.includes(cssClass)){ return }
+			if(u!='X'){u='X'; val=1 }else{u='O'; val=4 }
+			document.getElementsByClassName(cssClass)[0].innerHTML=u
+			clicked.push(cssClass)	
+			matches[[l,c]]=val
+			stop1:
+			for(l=1;l<=3;l++){
+				var sum1 = 0
+				var sum2 = 0
+				for(c=1;c<=3;c++){
+					sum1 += matches[[l,c]]
+					sum2 += matches[[c,l]]
+					if(sum1==3 || sum1==12 || sum2==3 || sum2==12 ){
+						victory= true; 
+						if(sum1==3 || sum2==3){ vencedor = 'X'}
+						else{ vencedor = 'O'}
+						break stop1
+					}
+				}
+			}
+			sum1 = matches[[1,1]]+matches[[2,2]]+matches[[3,3]]
+			sum2 = matches[[1,3]]+matches[[2,2]]+matches[[3,1]]
+			if(sum1==3 || sum1==12 || sum2==3 || sum2==12){
+					victory= true;	
+					if(sum1==3 || sum2==3){ vencedor = 'X'}
+					else{ vencedor = 'O'}
+			}
+			if(victory){
+				alert('vitória do '+vencedor)
+				location.reload()
+			}
+			if(clicked.length == 9){
+				alert('Deu velha seus patos!!!')
+				location.reload()
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="quadro">
+		<div class="celula c11" onclick="p(1,1)"></div>
+		<div class="celula c12" onclick="p(1,2)"></div>
+		<div class="celula c13" onclick="p(1,3)"></div>
+		<div class="celula c21" onclick="p(2,1)"></div>
+		<div class="celula c22" onclick="p(2,2)"></div>
+		<div class="celula c23" onclick="p(2,3)"></div>
+		<div class="celula c31" onclick="p(3,1)"></div>
+		<div class="celula c32" onclick="p(3,2)"></div>
+		<div class="celula c33" onclick="p(3,3)"></div>
+	</div>
+
+</body>
+</html>

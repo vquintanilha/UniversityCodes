@@ -1,0 +1,109 @@
+﻿<Window x:Class="CalcadosWPF.EnderecoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcadosWPF"
+        mc:Ignorable="d"
+        Title="Endereço" Height="320" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Margin="10"
+                   VerticalAlignment="Center"
+                   Text="Rua: *"/>
+        <TextBox Grid.Column="1"
+                 Margin="10"
+                 Text="{Binding Endereco.Rua}"/>
+
+        <TextBlock Margin="10"
+                   Grid.Row="1"
+                   VerticalAlignment="Center"
+                   Text="CEP: *"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="1"
+                 Margin="10"
+                 Text="{Binding Endereco.CEP}"/>
+
+        <TextBlock Margin="10"
+                   Grid.Row="2"
+                   VerticalAlignment="Center"
+                   Text="Número:"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="2"
+                 Margin="10"
+                 Text="{Binding Endereco.Numero}"/>
+
+        <TextBlock Margin="10"
+                   Grid.Row="3"
+                   VerticalAlignment="Center"
+                   Text="Complemento:"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="3"
+                 Margin="10"
+                 Text="{Binding Endereco.Complemento}"/>
+
+        <TextBlock Margin="10"
+                   Grid.Row="4"
+                   VerticalAlignment="Center"
+                   Text="Cidade: *"/>
+        <TextBox Grid.Column="1"
+                 Grid.Row="4"
+                 Margin="10"
+                 Text="{Binding Endereco.Cidade}"/>
+
+        <TextBlock Margin="10"
+                   Grid.Row="5"
+                   VerticalAlignment="Center"
+                   Text="Estado: *"/>
+        <ComboBox Grid.Column="1"
+                  Grid.Row="5"
+                  Margin="10"
+                  SelectedValue="{Binding Endereco.Estado}"
+                  SelectedValuePath="Tag">
+            <ComboBoxItem Content="Acre" Tag="AC"/>
+            <ComboBoxItem Content="Alagoas" Tag="AL"/>
+            <ComboBoxItem Content="Amapá" Tag="AP"/>
+            <ComboBoxItem Content="Amazonas" Tag="AM"/>
+            <ComboBoxItem Content="Bahia" Tag="BA"/>
+            <ComboBoxItem Content="Ceará" Tag="CE"/>
+            <ComboBoxItem Content="Distrito Federal" Tag="DF"/>
+            <ComboBoxItem Content="Espírito Santo" Tag="ES"/>
+            <ComboBoxItem Content="Goiás" Tag="GO"/>
+            <ComboBoxItem Content="Maranhão" Tag="MA"/>
+            <ComboBoxItem Content="Mato Grosso" Tag="MT"/>
+            <ComboBoxItem Content="Mato Grosso do Sul" Tag="MS"/>
+            <ComboBoxItem Content="Minas Gerais" Tag="MG"/>
+            <ComboBoxItem Content="Pará" Tag="PA"/>
+            <ComboBoxItem Content="Paraíba" Tag="PB"/>
+            <ComboBoxItem Content="Paraná" Tag="PR"/>
+            <ComboBoxItem Content="Pernambuco" Tag="PE"/>
+            <ComboBoxItem Content="Piauí" Tag="PI"/>
+            <ComboBoxItem Content="Rio de Janeiro" Tag="RJ"/>
+            <ComboBoxItem Content="Rio Grande do Norte" Tag="RN"/>
+            <ComboBoxItem Content="Rio Grande do Sul" Tag="RS"/>
+            <ComboBoxItem Content="Rondônia" Tag="RO"/>
+            <ComboBoxItem Content="Roraima" Tag="RR"/>
+            <ComboBoxItem Content="Santa Catarina" Tag="SC"/>
+            <ComboBoxItem Content="São Paulo" Tag="SP"/>
+            <ComboBoxItem Content="Sergipe" Tag="SE"/>
+            <ComboBoxItem Content="Tocantins" Tag="TO"/>
+        </ComboBox>
+
+        <Button Margin="10" Width="100" Content="Ok" x:Name="BtnOk" Click="BtnOk_Click"
+                Grid.Row="6" Grid.ColumnSpan="2" Height="20"/>
+
+    </Grid>
+</Window>

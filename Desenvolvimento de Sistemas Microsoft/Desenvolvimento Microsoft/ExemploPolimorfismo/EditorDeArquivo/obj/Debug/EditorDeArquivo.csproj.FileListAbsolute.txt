@@ -1,0 +1,7 @@
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\bin\Debug\EditorDeArquivo.exe.config
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\bin\Debug\EditorDeArquivo.exe
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\bin\Debug\EditorDeArquivo.pdb
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\obj\Debug\EditorDeArquivo.csprojAssemblyReference.cache
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\obj\Debug\EditorDeArquivo.csproj.CoreCompileInputs.cache
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\obj\Debug\EditorDeArquivo.exe
+C:\Users\1829203\source\repos\ExemploPolimorfismo\EditorDeArquivo\obj\Debug\EditorDeArquivo.pdb

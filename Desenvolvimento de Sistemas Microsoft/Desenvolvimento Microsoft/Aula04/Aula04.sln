@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aula04", "Aula04\Aula04.csproj", "{6CABC128-2D2D-4C9C-8D6F-4597D6F4B820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ORMEF", "ORMEF\ORMEF.csproj", "{E0E6868C-3CCA-4B6E-BA79-070ADB95426F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CABC128-2D2D-4C9C-8D6F-4597D6F4B820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CABC128-2D2D-4C9C-8D6F-4597D6F4B820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CABC128-2D2D-4C9C-8D6F-4597D6F4B820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CABC128-2D2D-4C9C-8D6F-4597D6F4B820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0E6868C-3CCA-4B6E-BA79-070ADB95426F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0E6868C-3CCA-4B6E-BA79-070ADB95426F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0E6868C-3CCA-4B6E-BA79-070ADB95426F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0E6868C-3CCA-4B6E-BA79-070ADB95426F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C813C9F6-06F2-45F4-A746-2A4C04C58202}
+	EndGlobalSection
+EndGlobal

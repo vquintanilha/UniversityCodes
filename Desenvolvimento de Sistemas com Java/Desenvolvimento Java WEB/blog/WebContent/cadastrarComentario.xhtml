@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+
+	<h:form>
+
+		<p:growl globalOnly="true" />
+
+		<p:panelGrid columns="3">
+
+			<p:outputLabel for="n1" value="Usuário:" />
+			<p:inputText id="n1" value="#{comentarioBean.comentario.usuario}" />
+			<p:message for="n1" />
+
+			<p:outputLabel for="n2" value="Postagem:" />
+			<p:inputTextarea id="n2"
+				value="#{comentarioBean.comentario.postagem}" />
+			<p:message for="n2" />
+
+			<p:outputLabel for="n3" value="Tipo:" />
+			<p:selectOneRadio id="n3" value="#{comentarioBean.comentario.tipo}">
+				<f:selectItem itemLabel="Normal" itemValue="Normal" />
+				<f:selectItem itemLabel="Importante" itemValue="Importante" />
+				<f:selectItem itemLabel="Urgente" itemValue="Urgente" />
+			</p:selectOneRadio>
+			<p:message for="n3" />
+
+			<p:commandButton value="Cadastrar"
+				action="#{comentarioBean.cadastrar()}" update="@form" />
+
+		</p:panelGrid>
+
+	</h:form>
+
+
+</h:body>
+</html>

@@ -1,0 +1,13 @@
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.exe.config
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.exe
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.pdb
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.csprojAssemblyReference.cache
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.csproj.CoreCompileInputs.cache
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.exe
+C:\Users\1829203\Documents\Github\Desenvolvimento-Microsoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.pdb
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.exe.config
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.exe
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\bin\Debug\NumerosFlutuantes.pdb
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.csproj.CoreCompileInputs.cache
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.exe
+C:\Users\1829203\Documents\Github\DesenvolvimentoMicrosoft\Exemplos\NumerosFlutuantes\obj\Debug\NumerosFlutuantes.pdb

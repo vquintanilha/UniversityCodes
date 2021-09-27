@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassagemAerea", "PassagemAerea\PassagemAerea.csproj", "{5954EB7D-9049-4EF3-80C0-8CBC70675B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AviacaoWPF", "AviacaoWPF\AviacaoWPF.csproj", "{E98D448E-AF3A-4554-ADD3-33DE8B0D0F6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5954EB7D-9049-4EF3-80C0-8CBC70675B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5954EB7D-9049-4EF3-80C0-8CBC70675B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5954EB7D-9049-4EF3-80C0-8CBC70675B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5954EB7D-9049-4EF3-80C0-8CBC70675B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E98D448E-AF3A-4554-ADD3-33DE8B0D0F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E98D448E-AF3A-4554-ADD3-33DE8B0D0F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E98D448E-AF3A-4554-ADD3-33DE8B0D0F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E98D448E-AF3A-4554-ADD3-33DE8B0D0F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B046A6E-259A-4072-AD18-185505A09E46}
+	EndGlobalSection
+EndGlobal

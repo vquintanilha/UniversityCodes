@@ -1,0 +1,31 @@
+﻿<Window x:Class="CalcadosWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcadosWPF"
+        mc:Ignorable="d"
+        Title="Calçados NosSeusPes" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Height="20" 
+              VerticalAlignment="Top"
+              Grid.ColumnSpan="2">
+            <MenuItem Header="Vendas" x:Name="VendasMenu" Click="VendasMenu_Click"/>
+            <MenuItem Header="Clientes" x:Name="ClientesMenu" Click="ClientesMenu_Click"/>
+            <MenuItem Header="Sapatos" x:Name="SapatosMenu" Click="SapatosMenu_Click"/>
+            <MenuItem Header="Modelos" x:Name="ModelosMenu" Click="ModelosMenu_Click"/>
+        </Menu>
+
+        <Image x:Name="Logo"
+               Grid.ColumnSpan="2"
+               Width="200"
+               Height="200"
+               Source="Imagens/Logo.png"/>
+
+    </Grid>
+</Window>

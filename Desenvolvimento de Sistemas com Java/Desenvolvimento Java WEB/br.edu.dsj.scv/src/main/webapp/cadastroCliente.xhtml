@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/recursos/template/template.xhtml">
+
+	<ui:define name="tituloPagina">Cadastro de Cliente</ui:define>
+	<ui:define name="tituloPrincipal">Cadastro de Cliente</ui:define>
+	<ui:define name="tituloSecundario">cadastre os clientes para realizar locações</ui:define>
+	<ui:define name="botoesAcao">
+		<p:commandButton value="Salvar" action="#{clienteBean.cadastrarCliente()}" update="@form"/>
+	</ui:define>
+	<ui:define name="conteudo">
+
+		<p:panelGrid>
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n1" value="Nome completo:" />
+				</p:column>
+				<p:column colspan="4">
+					<p:inputText id="n1" value="#{clienteBean.cliente.nomeCompleto}" />
+				</p:column>
+				<p:column>
+					<p:message for="n1" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n2" value="CPF:" />
+				</p:column>
+				<p:column>
+					<p:inputMask mask="999.999.999-99" id="n2"
+						value="#{clienteBean.cliente.cpf}" />
+				</p:column>
+				<p:column>
+					<p:message for="n2" />
+				</p:column>
+				<p:column>
+					<p:outputLabel for="n3" value="RG:" />
+				</p:column>
+				<p:column>
+					<p:inputText id="n3" value="#{clienteBean.cliente.rg}" />
+				</p:column>
+				<p:column>
+					<p:message for="n3" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n4" value="Usuário:" />
+				</p:column>
+				<p:column>
+					<p:inputText id="n4" value="#{clienteBean.cliente.usuario}" />
+				</p:column>
+				<p:column>
+					<p:message for="n4" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n5" value="Senha:" />
+				</p:column>
+				<p:column>
+					<p:inputText id="n5" value="#{clienteBean.cliente.senha}" />
+				</p:column>
+				<p:column>
+					<p:message for="n5" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n6" value="CPF:" />
+				</p:column>
+				<p:column>
+					<p:calendar id="n6" value="#{clienteBean.cliente.dataNascimento}" />
+				</p:column>
+				<p:column>
+					<p:message for="n6" />
+				</p:column>
+				<p:column>
+					<p:outputLabel for="n7" value="Sexo:" />
+				</p:column>
+				<p:column>
+					<p:selectOneRadio id="n7" value="#{clienteBean.cliente.sexo}">
+						<f:selectItem itemLabel="Masculino" itemValue="M" />
+						<f:selectItem itemLabel="Feminino" itemValue="F" />
+					</p:selectOneRadio>
+				</p:column>
+				<p:column>
+					<p:message for="n7" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n8" value="Origem:" />
+				</p:column>
+				<p:column>
+					<p:selectOneMenu id="n8" value="#{clienteBean.cliente.cidade}">
+						<f:selectItem itemLabel="--Selecione--" noSelectionOption="true" />
+						<f:selectItem itemLabel="Curitiba" itemValue="Curitiba" />
+						<f:selectItem itemLabel="Ponta Grossa" itemValue="Ponta Grossa" />
+						<f:selectItem itemLabel="Campo Largo" itemValue="Campo Largo" />
+					</p:selectOneMenu>
+				</p:column>
+				<p:column>
+					<p:message for="n8" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:outputLabel for="n9" value="Esportes preferidos:" />
+				</p:column>
+				<p:column colspan="4">
+					<p:selectManyCheckbox id="n9"
+						value="#{clienteBean.cliente.esportes}"
+						converter="omnifaces.SelectItemsIndexConverter"
+						layout="grid" columns="3">
+						<f:selectItems value="#{esporteBean.esportes}" var="esp"
+							itemLabel="#{esp.nome}" itemValue="#{esp}" />
+					</p:selectManyCheckbox>
+				</p:column>
+				<p:column>
+					<p:message for="n9" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+
+	</ui:define>
+
+</ui:composition>
+
+</html>
